@@ -58,6 +58,7 @@ header a {
 
 header a:hover {
     color: #0066ff;
+    text-shadow: 0 0 10px rgba(0, 102, 255, 0.5);
 }
 
 .hero {
@@ -73,6 +74,7 @@ header a:hover {
     font-size: 3rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero p {
@@ -235,6 +237,10 @@ footer {
     border-top: 2px solid #0066ff;
 }
 
+footer p {
+    margin: 0.5rem 0;
+}
+
 /* Social Links Section */
 .social-links {
     display: flex;
@@ -254,12 +260,15 @@ footer {
     color: #0066ff;
     transition: all 0.3s ease;
     border: 2px solid #0066ff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .social-links a:hover {
     background-color: #0066ff;
     color: white;
     transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.5);
 }
 
 /* Button Styling */
@@ -279,6 +288,27 @@ button:hover, .btn:hover {
     background-color: #004db3;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 102, 255, 0.4);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 0.8s ease-in;
 }
 
 @media (max-width: 768px) {
