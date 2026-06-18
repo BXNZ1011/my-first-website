@@ -335,14 +335,17 @@ section {
     }
 
     header nav {
-        flex-direction: column;
-        gap: 1rem;
-    }
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    header ul {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    flex-wrap: wrap;
+}
 
     .contact form {
         max-width: 100%;
